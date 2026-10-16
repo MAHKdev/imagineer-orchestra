@@ -48,9 +48,9 @@ instance picks them up automatically. Nothing else lives per-instance.
 ## Setup
 
 1. Install the app (above).
-2. Desk → search **"Orchestra Settings"** → set the **Orchestra URL**
-   (default: `https://orchestra.imagineer.solutions`) → tick **Enabled** → Save.
-3. Reload any Desk page — the Orchestra launcher appears bottom-right.
+2. Reload any Desk page — the Orchestra launcher appears bottom-right.
+   Enabled by default on install; Desk → search **"Orchestra Settings"**
+   to change the **Orchestra URL** or switch it off.
 
 Optional: `orchestra_url` in `site_config.json` still works as a fallback,
 and existing `concerto_config` Server Scripts are auto-detected.
