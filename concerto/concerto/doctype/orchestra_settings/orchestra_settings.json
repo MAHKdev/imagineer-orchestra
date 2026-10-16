@@ -30,9 +30,9 @@
    "fieldname": "orchestra_url",
    "fieldtype": "Data",
    "label": "Orchestra URL",
-   "default": "https://orchestra.imagineer.solutions",
    "options": "URL",
-   "description": "Base URL of the Orchestra AI server. Falls back to site_config.json 'orchestra_url', then to the hosted default."
+   "hidden": 1,
+   "description": "Debug/dev override only — hidden from the form. Priority: this field → site_config.json 'orchestra_url' → hosted default."
   }
  ],
  "issingle": 1,

@@ -49,8 +49,9 @@ instance picks them up automatically. Nothing else lives per-instance.
 
 1. Install the app (above).
 2. Reload any Desk page — the Orchestra launcher appears bottom-right.
-   Enabled by default on install; Desk → search **"Orchestra Settings"**
-   to change the **Orchestra URL** or switch it off.
+   Enabled by default on install; Desk → **"Orchestra Settings"** is the
+   kill switch. To point at a different Orchestra server (self-hosted /
+   dev), set `orchestra_url` in `site_config.json`.
 
 Optional: `orchestra_url` in `site_config.json` still works as a fallback,
 and existing `concerto_config` Server Scripts are auto-detected.

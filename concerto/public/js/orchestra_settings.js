@@ -3,11 +3,9 @@
 frappe.ui.form.on("Orchestra Settings", {
   refresh: function (frm) {
     frm.add_custom_button("Test Connection", function () {
-      var url = (frm.doc.orchestra_url || "").replace(/\/$/, "");
-      if (!url) {
-        frappe.msgprint("Enter an Orchestra URL first");
-        return;
-      }
+      // orchestra_url is a hidden debug field — empty means the hosted
+      // default, so test that.
+      var url = (frm.doc.orchestra_url || "https://orchestra.imagineer.solutions").replace(/\/$/, "");
       fetch(url + "/concerto/bridge.js")
         .then(function (r) {
           if (!r.ok) throw new Error("HTTP " + r.status);
