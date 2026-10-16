@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "autoname": "field:settings_name",
+ "creation": "2026-10-15 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "settings_name",
+  "enabled",
+  "orchestra_url"
+ ],
+ "fields": [
+  {
+   "fieldname": "settings_name",
+   "fieldtype": "Data",
+   "label": "Settings Name",
+   "default": "Orchestra Settings",
+   "reqd": 1,
+   "read_only": 1,
+   "hidden": 1
+  },
+  {
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled",
+   "default": "0",
+   "description": "Master switch. When unchecked, the Orchestra launcher is not injected on any page."
+  },
+  {
+   "fieldname": "orchestra_url",
+   "fieldtype": "Data",
+   "label": "Orchestra URL",
+   "default": "https://orchestra.imagineer.solutions",
+   "options": "URL",
+   "description": "Base URL of the Orchestra AI server. Falls back to site_config.json 'orchestra_url', then to the hosted default."
+  }
+ ],
+ "issingle": 1,
+ "modified": "2026-10-15 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Concerto",
+ "name": "Orchestra Settings",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 0,
+   "export": 0,
+   "print": 0,
+   "read": 1,
+   "report": 0,
+   "role": "System Manager",
+   "share": 0,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
